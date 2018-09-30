@@ -51,8 +51,8 @@ def login():
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
-    # if 'user' in session:
-    #     return render_template("index.html")
+    if 'user' in session:
+        return render_template("index.html")
     if request.method == 'GET':
         return render_template("register.html")
     login = request.form.get("login")
