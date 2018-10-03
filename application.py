@@ -150,7 +150,7 @@ def book(isbn):
                            work_ratings_count=work_ratings_count)
 
 
-@app.route("/api/book/<string:isbn>")
+@app.route("/api/<string:isbn>")
 def book_api(isbn):
     """Return details about a single book."""
 
