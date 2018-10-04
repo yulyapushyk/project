@@ -26,8 +26,8 @@ if not os.getenv("DATABASE_URL"):
 
 @app.route("/")
 def index():
-    if 'user' not in session:
-        return render_template("login.html")
+#     if 'user' not in session:
+#         return render_template("login.html")
     return render_template("index.html", logged=session['user'])
 
 
