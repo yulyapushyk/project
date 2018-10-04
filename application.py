@@ -184,12 +184,3 @@ def book_api(isbn):
             "review_count": reviews,
             "average_score": average_score
         })
-
-
-
-
-
-
-
-
-
